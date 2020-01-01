@@ -1,0 +1,18 @@
+%base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+$breakpoints: (
+    pc:  "only screen and (min-width: 1171px)", // PC
+    tab: "only screen and (max-width: 1170px)",  // タブレット
+    sp:  "only screen and (max-width: 414px)",  // スマホ
+);
+
+@mixin media($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}

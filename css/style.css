@@ -1,0 +1,163 @@
+.header, .header__menu1, .header__menu2, .header__menu3, .header__menu4, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1171px) {
+  .header {
+    width: 1366px;
+    background: green;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .header {
+    width: 414px;
+    background: red;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .header {
+    width: 320px;
+    background: blue;
+  }
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo_img {
+  width: 272px;
+}
+
+@media only screen and (min-width: 1171px) {
+  .header__menu_ham {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .header__menu_ham {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1171px) {
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .header__contact {
+    display: none;
+  }
+}
+
+.header__menu1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__menu1_img {
+  width: 16px;
+}
+
+.header__menu2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__menu2_img {
+  width: 16px;
+}
+
+.header__menu3 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__menu3_img {
+  width: 28px;
+}
+
+.header__menu4 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__menu4_img {
+  width: 16px;
+}
+
+.header__mail_img {
+  width: 16px;
+  height: 12px;
+}
+
+.header__tel_img {
+  width: 18px;
+  height: 18px;
+}
+
+.header__mainvisual1 {
+  position: relative;
+  z-index: 2;
+}
+
+.header__mainvisual2 {
+  position: relative;
+  z-index: 2;
+}
+
+.header__mainvisualtext {
+  position: absolute;
+  z-index: 1;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1171px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body {
+    background-color: yellow;
+  }
+}
+/*# sourceMappingURL=style.css.map */

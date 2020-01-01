@@ -1,0 +1,108 @@
+.header {
+    @extend %base;
+
+    @include media(pc) {
+        width: 1366px;
+        background: green;    
+    };
+    @include media(tab) {
+        width: 414px;            
+        background: red;
+    };
+    @include media(sp) {
+        width: 320px;
+        background: blue;
+    };
+
+
+
+
+    nav {
+        display: flex;        
+    }
+
+
+    &__logo {
+        &_img{
+            width: 272px;
+        }
+    }
+    &__menu {
+        &_ham {
+            @include media(pc) {
+                display: none;
+            };
+            @include media(tab) {
+                display: inline;
+            };
+        }
+        @include media(pc) {
+            display: flex;
+        };
+        @include media(tab) {
+            display: none;                
+        };
+    }
+    &__contact {
+        @include media(tab) {
+            display: none;                
+        };
+    }
+
+    &__menu1 {
+        @extend %base;
+        padding-left: 20px;
+        padding-right: 20px;
+        &_img{
+            width: 16px;
+        }
+    }
+    &__menu2 {
+        @extend %base;
+        padding-left: 20px;
+        padding-right: 20px;
+        &_img{
+            width: 16px;
+        }
+    }
+    &__menu3 {
+        @extend %base;
+        padding-left: 20px;
+        padding-right: 20px;
+        &_img{
+            width: 28px;
+        }
+    }
+    &__menu4 {
+        @extend %base;
+        padding-left: 20px;
+        padding-right: 20px;
+        &_img{
+            width: 16px;
+        }
+    }
+    &__mail {
+        &_img {
+            width: 16px;
+            height: 12px;
+        }
+    }
+    &__tel {
+        &_img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    &__mainvisual1 {
+        position: relative;
+        z-index: 2;
+    }
+    &__mainvisual2 {
+        position: relative;
+        z-index: 2;
+    }
+    &__mainvisualtext {
+        position: absolute;
+        z-index: 1;
+    }
+}

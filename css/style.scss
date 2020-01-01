@@ -1,0 +1,19 @@
+@import "base";
+@import "header";
+
+
+body {
+    @extend %base;
+    margin: 0px;
+    width: 100%;
+
+    @include media(pc) {
+      background-color: red;
+    };
+    @include media(tab) {
+      background-color: blue;
+    };
+    @include media(sp) {
+      background-color: yellow;
+    };
+}
