@@ -66,6 +66,15 @@
   }
 }
 
+.header__mask {
+  position: absolute;
+  z-index: 4;
+  top: -200px;
+  left: 0px;
+  height: 800px;
+  background-color: white;
+}
+
 @media only screen and (min-width: 1171px) {
   .header__logo_img {
     width: 272px;
@@ -660,19 +669,19 @@ body {
 
 @media only screen and (min-width: 1171px) {
   body {
-    background-color: red;
+    background-color: white;
   }
 }
 
 @media only screen and (max-width: 1170px) {
   body {
-    background-color: blue;
+    background-color: white;
   }
 }
 
 @media only screen and (max-width: 414px) {
   body {
-    background-color: yellow;
+    background-color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
