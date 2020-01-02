@@ -3,15 +3,15 @@
 
     @include media(pc) {
         width: 1366px;
-        background: green;    
+        background-image: url("../img/header/background.png");
     };
     @include media(tab) {
-        width: 414px;            
-        background: red;
+        width: 414px;
+        background-image: url("../img/sp/background.png");
     };
     @include media(sp) {
         width: 320px;
-        background: blue;
+        background-image: url("../img/sp/background.png");
     };
 
 
@@ -24,18 +24,15 @@
     main {
         @include media(pc) {
             width: 1366px;
-            height: 500px;
-            background: green;    
+            height: 664px;
         };
         @include media(tab) {
             width: 414px;
-            height: 600px;            
-            background: red;
+            height: 579px;
         };
         @include media(sp) {
             width: 320px;
-            height: 600px;
-            background: blue;
+            height: 579px;
         };
     
     }
