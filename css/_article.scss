@@ -245,4 +245,35 @@
         }
     }
 
+
+
+    &__menubutton {
+        color: #a33143;
+        border-color: #a33143;
+        border-radius: 5px;
+        width: 170px;
+        height: 40px;
+
+        @include media(tab) {
+            margin-top: 100px;
+        };
+        @include media(sp) {
+            margin-top: 100px;
+        };
+
+    }
+
+    &__news {
+        @extend %base;
+        @include media(pc) {
+            width: 1366px;
+        };
+        @include media(tab) {
+            width: 414px;
+        };
+        @include media(sp) {
+            width: 320px;
+        };
+    
+    }
 }

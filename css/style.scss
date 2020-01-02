@@ -2,7 +2,17 @@
 @import "header";
 @import "article";
 
-
+h1, h2, h3 {
+  color: #653f36;
+}
+ul {
+  list-style: none;
+}
+hr {
+  height: 1px;
+  border: none;
+  background: #f7e8e8;
+}
 body {
     @extend %base;
     margin: 0px;
