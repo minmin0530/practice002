@@ -21,10 +21,38 @@
         display: flex;        
     }
 
+    main {
+        @include media(pc) {
+            width: 1366px;
+            height: 500px;
+            background: green;    
+        };
+        @include media(tab) {
+            width: 414px;
+            height: 600px;            
+            background: red;
+        };
+        @include media(sp) {
+            width: 320px;
+            height: 600px;
+            background: blue;
+        };
+    
+    }
 
     &__logo {
         &_img{
-            width: 272px;
+            @include media(pc) {
+                width: 272px;
+            };
+            @include media(tab) {
+                width: 136px;
+                margin-right: 100px;
+            };
+            @include media(sp) {
+                width: 136px;
+                margin-right: 100px;
+            };
         }
     }
     &__menu {
@@ -94,15 +122,77 @@
         }
     }
     &__mainvisual1 {
-        position: relative;
-        z-index: 2;
+        position: absolute;
+    
+        &_img {
+            position: absolute;
+            z-index: 2;
+            @include media(pc) {
+                width: 570px;
+            };
+            @include media(tab) {
+                top: 200px;
+                width: 340px;            
+            };
+            @include media(sp) {
+                top: 200px;
+                width: 340px;
+            };
+        }
     }
     &__mainvisual2 {
-        position: relative;
-        z-index: 2;
+        position: absolute;
+
+        &_img {
+            position: absolute;
+            z-index: 2;
+            @include media(pc) {
+                width: 570px;
+            };
+            @include media(tab) {
+                top: 200px;
+                width: 340px;            
+            };
+            @include media(sp) {
+                top: 200px;
+                width: 340px;
+            };
+        }
     }
     &__mainvisualtext {
         position: absolute;
-        z-index: 1;
+        z-index: 2;
+        @include media(pc) {
+            left: 600px;
+            top: 100px;
+        };
+        @include media(tab) {
+            left: 150px;
+            top: 0px;
+        };
+        @include media(sp) {
+            left: 150px;
+            top: 0px;
+        };
+
+        &_img {
+            position: absolute;
+            z-index: 1;
+            @include media(pc) {
+                left: 450px;
+                top: 0px;
+                width: 340px;
+            };
+            @include media(tab) {
+                left: 50px;
+                top: 0px;
+                width: 243px;            
+            };
+            @include media(sp) {
+                left: 50px;
+                top: 0px;
+                width: 243px;
+            };
+        }
     }
 }
