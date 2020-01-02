@@ -1,19 +1,30 @@
 @import "base";
 @import "header";
+@import "article";
 
-
+h1, h2, h3 {
+  color: #653f36;
+}
+ul {
+  list-style: none;
+}
+hr {
+  height: 1px;
+  border: none;
+  background: #f7e8e8;
+}
 body {
     @extend %base;
     margin: 0px;
     width: 100%;
 
     @include media(pc) {
-      background-color: red;
+      background-color: white;
     };
     @include media(tab) {
-      background-color: blue;
+      background-color: white;
     };
     @include media(sp) {
-      background-color: yellow;
+      background-color: white;
     };
 }
