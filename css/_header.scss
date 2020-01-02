@@ -1,5 +1,6 @@
 .header {
     @extend %base;
+    background: white;
 
     @include media(pc) {
         width: 1366px;
